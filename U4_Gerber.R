@@ -55,4 +55,4 @@ modelLog3 = glm(voting ~ sex + control + sex:control, data = gerber, family = "b
 summary(modelLog3)
 
 predictPossibilities2 = predict(modelLog3, newdata=Possibilities, type="response")
-abs(predictPossibilities[4] - 0.290456)
+abs(predictPossibilities2[4] - 0.290456)
