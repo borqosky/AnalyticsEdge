@@ -47,4 +47,3 @@ RandomForestabpr = randomForest(letter ~ . - isB, data=train2)
 predRandomForestabpr = predict(RandomForestabpr, newdata=test2)
 table(test2$letter, predRandomForestabpr)
 predRandomForestabpr.accuracy = (390 + 380 + 392+ 369) /nrow(test2)
-predRandomForestabpr.accuracy
